@@ -1,0 +1,15 @@
+body { margin: 0; font-family: system-ui, sans-serif; background: #0f0f14; color: #f1f1f7; }
+.shell { max-width: 880px; margin: 0 auto; padding: 16px; }
+header h1 { margin: 0; font-size: 30px; }
+header p { opacity: .7; margin: 6px 0 18px; }
+.tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 14px; }
+.tabs button { border: 0; padding: 12px 10px; border-radius: 14px; background: #1b1b24; color: inherit; }
+.tabs button.active { background: #2f2f41; }
+.tab { display: none; }
+.tab.active { display: block; }
+.row { display: flex; gap: 8px; margin-bottom: 14px; }
+.row input { flex: 1; padding: 12px; border-radius: 12px; border: 1px solid #2b2b35; background: #16161d; color: inherit; }
+.row button { padding: 12px 14px; border: 0; border-radius: 12px; background: #343449; color: inherit; }
+.list { display: grid; gap: 10px; }
+.card { background: #17171f; border: 1px solid #2b2b35; border-radius: 16px; padding: 12px; white-space: pre-wrap; }
+pre { background: #17171f; border: 1px solid #2b2b35; border-radius: 16px; padding: 12px; overflow: auto; }

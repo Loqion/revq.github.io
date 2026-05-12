@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>revk panel</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <h1>revk panel</h1>
+      <p id="subtitle">память, отношения, дневник, характер</p>
+    </header>
+
+    <nav class="tabs">
+      <button data-tab="memory" class="active">память</button>
+      <button data-tab="relations">отношения</button>
+      <button data-tab="mood">характер</button>
+      <button data-tab="diary">дневник</button>
+    </nav>
+
+    <section id="memory" class="tab active">
+      <div class="row">
+        <input id="memory-search" placeholder="поиск по памяти">
+        <button id="reload">обновить</button>
+      </div>
+      <div id="memory-list" class="list"></div>
+    </section>
+
+    <section id="relations" class="tab">
+      <pre id="relations-box"></pre>
+    </section>
+
+    <section id="mood" class="tab">
+      <pre id="mood-box"></pre>
+    </section>
+
+    <section id="diary" class="tab">
+      <div id="diary-list" class="list"></div>
+    </section>
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
